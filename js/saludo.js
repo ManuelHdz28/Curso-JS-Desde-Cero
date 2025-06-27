@@ -1,5 +1,5 @@
 // ^ PARTE 1: INCIALIZA TU PRIMER PROGRAMA EN JAVASCRIPT
-alert("hola mundo con JavaScript"); // * Mensaje de saludo
+// alert("hola mundo con JavaScript"); // * Mensaje de saludo
 
 // ^ PARTE 2: VARIABLES Y TIPOS DE DATOS EN JAVASCRIPT
 
@@ -10,7 +10,7 @@ alert("hola mundo con JavaScript"); // * Mensaje de saludo
  var apellido;
  var estatura; // * Declaración de variable float
 
- alert("HOLA " + nombre); // * Mostrar el valor de la variable nombre
+ // alert("HOLA " + nombre); // * Mostrar el valor de la variable nombre
 
  // ^ PARTE 3: ASIGNACION, CONSOLE LOG Y TYPEOF EN JAVASCRIPT
 
@@ -134,10 +134,19 @@ console.log("Operadores de comparación o relacionales:"); // * Mostrar el títu
     console.log("Operadores Lógicos:"); // * Mostrar el título de la sección de operadores lógicos
     // * Los operadores lógicos se utilizan para combinar o invertir valores booleanos y devolver un valor booleano según el resultado de la operación.
 
-    
+    var edad = 18; // * Variable para almacenar la edad
+    var dni = false; // * Variable para almacenar si se tiene DNI o no
 
+    //* Ejemplo Operador lógico AND (&&)
 
+    console.log("Puede entrar la persona? (AND): " + (edad >= 18 && dni == true)); // * Verificar si la edad es mayor o igual a 18 y si se tiene DNI, devolverá true si ambas condiciones son verdaderas
 
+    //* Ejemplo Operador lógico OR (||)
 
+    console.log("Puede entrar la persona? (OR): " + (edad >= 18 || dni == true)); // * Verificar si la edad es mayor o igual a 18 o si se tiene DNI, devolverá true si al menos una de las condiciones es verdadera
+
+    dni = !false; // * Invertir el valor de la variable dni, ahora será true
+
+    console.log(dni); // * Mostrar el valor de la variable dni en la consola
 
 
